@@ -1,0 +1,20 @@
+<launch>
+
+  <node pkg="jetson-inference" name="follower2" type="follower2ar.py" output="screen">
+    <remap from="ar_tag" to="/visualization_marker" />
+    
+    <rosparam>
+       goal_z: 1.0 #0.35
+       z_threshold: 0.05
+       x_threshold: 0.05 #0.03
+       z_scale: 1.5 #1.0
+       x_scale: 0.9
+       max_angular_speed: 1.0
+       min_angular_speed: 0.1
+       max_linear_speed: 0.4
+       min_linear_speed: 0.05
+       slow_down_factor: 0.5 #0.8
+    </rosparam>
+    
+  </node>
+</launch>

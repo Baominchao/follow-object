@@ -163,6 +163,8 @@ catkin_install_python(PROGRAMS
    scripts/coordinate_transfor.py
    scripts/detection.py
    scripts/pose.py
+   scripts/follower2ar.py
+   scripts/follower2camera.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
